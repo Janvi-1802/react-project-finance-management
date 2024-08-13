@@ -1,25 +1,21 @@
 import logo from './logo.svg';
+import Header from './components/Header';
+import Signup from './components/Signup';
 import './App.css';
+function settingname()
+{
+  names;
+  return <>{names}</>
+}
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+   //<Header/>
+   <>
+   <a onClick={()=>document.getElementById("my_modal_4").showModal()}>sign up</a>
+    <Signup setingName:settingname/>
+    </>
+  )
 }
 
 export default App;
